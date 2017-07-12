@@ -5,6 +5,36 @@
     <title></title>
 </head>
 <body>
-高考本科，
+ <div id="div2"></div>
+<script>
+   var odiv1=document.getElementById("div1");
+    var oh1=document.getElementById("h11");
+
+
+
+    function siblings(elem){
+        var arr =[];
+        var elements=elem.parentNode.children;
+        for (var i=0;i<elements.length;i++){
+            if(elements[i]!=elem){
+                arr.push(elements[i]);
+            }
+        }
+
+        return arr;
+    }
+    function remove(elem){
+        elem.parentNode.appendChild()
+    }
+    function before(elem,newnode){
+        elem.parentNode.insertBefore(newnode,elem);
+    }
+   function after(elem,newnode){
+       if(elem.nextSibling){
+           elem.parentNode.in
+       }
+   }
+    function after
+</script>
 </body>
 </html>
