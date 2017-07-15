@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        #top{
+            width: 50px;
+            height: 50px;
+            background: #ff0000;
+            text-align: center;
+            line-height: 50px;
+            position: fixed;
+            right: 10px;
+            bottom: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="top">top</div>
+<script src="jquery-1.11.2.js"></script>
+<script>
+    $(function(){
+        $("#top").on("click", function(){
+            var timer = setInterval(function(){
+                var iScrollTop = $("body").scrollTop();
+                if(iScrollTop <= 0){
+                    clearInterval(timer);
+                }
+                $("body").scrollTop(iScrollTop-=50);
+            }, 100);
+        });
+    });
+</script>
+</body>
+</html>
