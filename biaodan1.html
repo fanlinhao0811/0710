@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-
+        body{
+            font:normal 12px/17px Arial;
+        }
+        div{
+            padding:2px;
+        }
+        input, textarea {
+            width: 12em;
+            border: 1px solid #888;
+        }
+        .focus {
+            border: 1px solid #f00;
+            background: #fcc;
+        }
     </style>
 </head>
 <body>
-<form action="" id="regForm">
-    <div>
+<form action="" id="regForm" method="post">
+    <fieeldent>
+        <legend>个人基本信息</legend>
+        <div>
         <labal  for="username">名称</labal>
         <input type="text" id="username"/>
     </div>
@@ -21,6 +36,18 @@
         <labal for="msg">详细信息</labal>
         <input type="text" id="msg"/>
     </div>
+    </fieeldent>
 </form>
+<script src="jquery-1.11.2.js"></script>
+<script>
+    $(function(){
+        $(":input").focus(function(){//$("input, textarea")
+            $(this).addClass("focus");
+            //this.className = "focus";
+        }).blur(function(){
+            $(this).removeClass("focus");
+        });
+    })
+</script>
 </body>
 </html>
