@@ -9,45 +9,35 @@
             padding: 0;
         }
         #container{
-            width: 400px;
-            margin:100px auto;
+            width: 1000px;
+            margin: 100px auto;
             position: relative;
         }
         #container img{
+            border: 10px solid rgba(255,255,0,0.4);
             position: absolute;
             top: 0;
             left: 0;
-            border: 10px solid #6D84B4;
             box-shadow: 5px 5px 5px rgba(50, 50, 50, .4);
             transition: all 1s ease;
         }
-        #container img:nth-child(1){
-            transform: rotate(15deg);
-        }
-        #container img:nth-child(2){
+        #container img:first-child{
             transform: rotate(30deg);
         }
-        #container img:nth-child(3){
-            transform: rotate(-15deg);
-        }
-        #container img:nth-child(4){
-            transform: rotate(-30deg);
+        #container img:last-child{
+            transform: rotate(-20deg);
         }
         #container img:hover{
             box-shadow: 10px 10px 5px rgba(50, 50, 50, .4);
             z-index: 1;
-            transform: scale(1.2) rotate(0);
+            transform: scale(1.1);
         }
-
     </style>
 </head>
 <body>
 <div id="container">
     <img src="img/1.jpg" alt=""/>
     <img src="img/2.jpg" alt=""/>
-    <img src="img/3.jpg" alt=""/>
-    <img src="img/4.jpg" alt=""/>
-
 </div>
 </body>
 </htm
