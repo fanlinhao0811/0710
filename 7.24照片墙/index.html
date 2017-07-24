@@ -111,14 +111,14 @@
             for (var j = 0; j < COL; j++) {
                 index++;
                 var oDiv = document.createElement("div");
-                oDiv.style.backgroundImage = "url(img/thumbs/" + (i + 1) + ".jpg)";
+                oDiv.style.backgroundImage = "url(img/thumbs/" + (i *6 + j+1) + ".jpg)";
                 oDiv.className = "img";
                 oDiv.innerHTML = "<span></span>";
                 oDiv.pos = {
                     col: j,
                     row: i
                 };
-                oDiv.index = index;
+                oDiv.index = (i *6 + j+1);
                 oContainer.appendChild(oDiv);
             }
         }
