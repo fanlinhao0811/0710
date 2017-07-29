@@ -75,5 +75,8 @@ a{
     right:0;
     top:9px;
 }
-
+#banner {
+    height: 460px;
+    width: 1002px;
+}
 
