@@ -78,5 +78,9 @@ a{
 #banner {
     height: 460px;
     width: 1002px;
+    background: 31333e;
 }
-
+#banner .bannerTitle{
+    height: 34px;
+    width: 512px;
+}
