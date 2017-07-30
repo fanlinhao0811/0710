@@ -3,8 +3,8 @@
 ico.
 花瓣
 站长工具
-html5shiv.js html5 新标签
-normalize.css
+html5shiv.js 解决html5新标签在较低版本ie下使用
+normalize.css 解决css重置
 
 格式工厂
 json.org
