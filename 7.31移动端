@@ -1,0 +1,9 @@
+移动端开发快捷键  meta:tp
+em指父元素的font-size倍数
+rem相对于html倍数
+media='print'打印时的样式
+orientation:横竖屏landscape:横屏，portrait；竖屏
+media  媒体查询css3样式
+bootstrap3  响应式框架
+foundation
+vertical-aligin
