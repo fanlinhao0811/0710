@@ -93,12 +93,16 @@
 #ipt a:hover{
     cursor: pointer;
     background-color: #b89f7a;
+    color: #fff;
 }
 
 #ipt span{
-    font-size: 14px;
+     font-size: 14px;
+    color: #b89f7a;
+ }
+#ipt span:hover{
+    cursor: pointer;
 }
-
 
 @media (max-width: 991px) {
     #banner img:nth-child(1){
@@ -121,6 +125,13 @@
     #rig-in>span{
         font-size: 12px;
     }
+
+
+
+
+
+
+
 }
 
 
